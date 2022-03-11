@@ -3,6 +3,7 @@ Implementazione di algoritmi di allineamento delle sequenze di DNA.
 
 Progetto svolto in occasione del corso di Algoritmi e Strutture Dati in Unicam con il prof. Luca Tesei.
 
+Di seguito una breve descrizione del progetto. Per ulteriori informazioni consultare il file .doc nel repository.
 **Allineamento di Sequenze**
 
 Una sequenza è una successione finita di simboli presi da un certo alfabeto. In Java si può tranquillamente equiparare a una stringa di caratteri. In biologia sequenze di lettere specifiche vengono usate per rappresentare filamenti di DNA o RNA. Dopo la scoperta di questi, c’è stata una forte spinta a sviluppare metodi automatici (algoritmi) per il riconoscimento e il confronto di sequenze che ha portato alla nascita della bioinformatica, un ambito di ricerca a cavallo tra l’informatica e la biologia. 
