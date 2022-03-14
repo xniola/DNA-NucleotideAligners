@@ -1,7 +1,7 @@
 # Needleman-Wunsch e Gotoh aligners.
 Implementazione di algoritmi di allineamento delle sequenze di DNA. 
 
-Progetto svolto in occasione del corso di Algoritmi e Strutture Dati in Unicam con il prof. Luca Tesei.
+Progetto svolto in occasione del corso universitario di Algoritmi e Strutture Dati presso Unicam con il prof. Luca Tesei.
 
 Di seguito una breve descrizione del progetto. Per ulteriori informazioni consultare il file .doc nel repository.
 
