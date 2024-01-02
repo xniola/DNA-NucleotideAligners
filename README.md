@@ -1,21 +1,21 @@
 # Needleman-Wunsch e Gotoh aligners.
-Implementazione di algoritmi di allineamento delle sequenze di DNA. 
+Implementation of DNA sequence alignment algorithms. 
 
-Progetto svolto in occasione del corso universitario di Algoritmi e Strutture Dati presso Unicam con il prof. Luca Tesei.
+Project carried out as part of the undergraduate course in Algorithms and Data Structures at Unicam with Prof. Luca Tesei.
 
-Di seguito una breve descrizione del progetto. Per ulteriori informazioni consultare il file .doc nel repository.
+Below is a brief description of the project. For more information see the .doc file in the repository.
 
 
 **Allineamento di Sequenze**
 
-Una sequenza è una successione finita di simboli presi da un certo alfabeto. In Java si può tranquillamente equiparare a una stringa di caratteri. In biologia sequenze di lettere specifiche vengono usate per rappresentare filamenti di DNA o RNA. Dopo la scoperta di questi, c’è stata una forte spinta a sviluppare metodi automatici (algoritmi) per il riconoscimento e il confronto di sequenze che ha portato alla nascita della bioinformatica, un ambito di ricerca a cavallo tra l’informatica e la biologia. 
-In bioinformatica, uno dei problemi su sequenze che risulta utile risolvere in maniera efficiente è quello della similarità. Ciò è giustificato dal fatto che sequenze simili probabilmente hanno avuto una evoluzione simile o si sono “evolute” da antenati comuni. Ma di preciso cosa significa “similarità”? Le risposte possono essere diverse, anche in base al tipo di “relazione biologica” che si cerca. Una delle nozioni di similarità più usate è basata sulla nozione di allineamento di sequenze.
-Supponiamo di avere un simbolo speciale, chiamato gap, e rappresentato solitamente da un trattino: “-”. Un allineamento di due sequenze date è una coppia di sequenze che contengono potenzialmente dei gap e che indica come trasformare una sequenza nell’altra e viceversa. 
+A sequence is a finite succession of symbols taken from a certain alphabet. In Java it can be safely equated with a string of characters. In biology specific letter sequences are used to represent strands of DNA or RNA. After the discovery of these, there was a strong push to develop automatic methods (algorithms) for recognizing and comparing sequences, which led to the birth of bioinformatics, a research field straddling computer science and biology. 
+In bioinformatics, one of the problems on sequences that is useful to solve efficiently is that of similarity. This is justified by the fact that similar sequences probably evolved similarly or "evolved" from common ancestors. But exactly what does "similarity" mean? The answers may vary, depending also on the kind of "biological relationship" one is looking for. One of the most widely used notions of similarity is based on the notion of sequence alignment.
+Suppose we have a special symbol, called a gap, and usually represented by a hyphen: "-." An alignment of two given sequences is a pair of sequences potentially containing gaps and indicating how to transform one sequence into the other and vice versa. 
 
-Naturalmente possono esistere diversi allineamenti fra le stesse stringhe e tra l'altro potenzialmente infiniti!
+Of course there can be different alignments between the same strings and among other things potentially infinite!
 
-Ma allora qual è l’allineamento “giusto”? L’idea di base è che ad ogni operazione presente nell’allineamento, tranne ovviamente la match, si può assegnare un certo costo. Quindi si può prendere come allineamento di due sequenze uno qualsiasi per cui il costo totale delle operazioni (la somma) sia minimo. Ne risulta quindi che il problema di trovare l’allineamento tra due sequenze è un problema di ottimizzazione. 
+But then what is the "right" alignment? The basic idea is that each operation in the alignment, except of course the match, can be assigned a certain cost. So one can take as an alignment of two sequences any one for which the total cost of the operations (the sum) is minimal. It follows then that the problem of finding the alignment between two sequences is an optimization problem. 
     
-Indichiamo con  una funzione che assegna i costi alle operazioni, detta funzione di costo o funzione di scoring. Indichiamo quindi con il costo associato all’operazione e assumiamo che il costo di ogni tipo di operazione sia, in generale, maggiore o uguale di zero tranne che nel caso di match, per cui il costo è uguale a zero.
+We denote by a function that assigns costs to operations, called the cost function or scoring function. We then denote by the cost associated with the operation and assume that the cost of each type of operation is, in general, greater than or equal to zero except in the case of matching, for which the cost is zero.
 
-Come possiamo procedere per calcolare in maniera efficiente il minimo, cioè la distanza di allineamento? Ci viene in aiuto la programmazione dinamica! Possiamo far vedere infatti che è possibile scomporre il problema di allineamento ottimo in sottoproblemi analoghi e che tali sottoproblemi godono della proprietà della sottostruttura ottima.
+How can we go about efficiently calculating the minimum, that is, the alignment distance? Dynamic programming comes to our aid! Indeed, we can show that it is possible to decompose the optimal alignment problem into analogous subproblems and that these subproblems enjoy the optimal substructure property.
