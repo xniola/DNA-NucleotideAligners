@@ -6,7 +6,7 @@ Project carried out as part of the undergraduate course in Algorithms and Data S
 Below is a brief description of the project. For more information see the .doc file in the repository.
 
 
-**Allineamento di Sequenze**
+## Sequence Alignment
 
 A sequence is a finite succession of symbols taken from a certain alphabet. In Java it can be safely equated with a string of characters. In biology specific letter sequences are used to represent strands of DNA or RNA. After the discovery of these, there was a strong push to develop automatic methods (algorithms) for recognizing and comparing sequences, which led to the birth of bioinformatics, a research field straddling computer science and biology. 
 In bioinformatics, one of the problems on sequences that is useful to solve efficiently is that of similarity. This is justified by the fact that similar sequences probably evolved similarly or "evolved" from common ancestors. But exactly what does "similarity" mean? The answers may vary, depending also on the kind of "biological relationship" one is looking for. One of the most widely used notions of similarity is based on the notion of sequence alignment.
