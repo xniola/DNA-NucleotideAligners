@@ -3,7 +3,9 @@ Implementation of DNA sequence alignment algorithms.
 
 Project carried out as part of the undergraduate course in Algorithms and Data Structures at Unicam with Prof. Luca Tesei.
 
-Below is a brief description of the project. For more information see the .doc file in the repository.
+Below is a brief description of the project. 
+
+**For more information see the .doc file in the repository.**
 
 
 ## Sequence Alignment
